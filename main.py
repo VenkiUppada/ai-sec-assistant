@@ -1,7 +1,14 @@
-from services.investigation_service import investigate
+import tools.cve_tool as cve_tool
+import agents.security_agent as security_agent
 
-report = investigate(
-    "Who owns google.com and is 8.8.8.8 malicious?"
+response = security_agent.agent.invoke(
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "Tell me about CVE-2021-44228"
+            }
+        ]
+    }
 )
-
-print(report)
+print(response)

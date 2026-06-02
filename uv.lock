@@ -14,6 +14,7 @@ dependencies = [
     { name = "pydantic" },
     { name = "python-dotenv" },
     { name = "python-whois" },
+    { name = "requests" },
     { name = "rich" },
 ]
 
@@ -26,6 +27,7 @@ requires-dist = [
     { name = "pydantic", specifier = ">=2.13.4" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "python-whois", specifier = ">=0.9.6" },
+    { name = "requests", specifier = ">=2.34.2" },
     { name = "rich", specifier = ">=15.0.0" },
 ]
 

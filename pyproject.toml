@@ -12,5 +12,6 @@ dependencies = [
     "pydantic>=2.13.4",
     "python-dotenv>=1.2.2",
     "python-whois>=0.9.6",
+    "requests>=2.34.2",
     "rich>=15.0.0",
 ]

@@ -1,7 +1,7 @@
-from models.llm_factory import get_gemini
+from models.llm_factory import get_gemini, get_groq
 from schemas.security_report import SecurityReport
 
-llm = get_gemini()
+llm = get_groq()
 
 structured_llm = llm.with_structured_output(SecurityReport)
 

@@ -1,13 +1,16 @@
 import whois
 from langchain.tools import tool
+from utils.logger import logger
 
 @tool
 def whois_lookup(domain: str) -> str:
+
     """
     Use this tool when you need ownership,
     registration, expiration, or registrar
     information about a domain.
     """
+    logger.info(f"Running WHOIS lookup for {domain}")
 
     try:
         info = whois.whois(domain)

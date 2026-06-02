@@ -1,10 +1,12 @@
 from langchain.tools import tool
+from utils.logger import logger
 
 @tool
 def ip_reputation_lookup(ip_address: str)-> str:
     """
     Use this tool when the user asks about IP reputaion, malicious IPs, suspicious IP Addresses, abuse reports, or threat intelligence realated to an IP address.
     """
+    logger.info(f"Running IP reputation lookup for {ip_address}")
 
     mock_data = {
         "8.8.8.8": "Low Risk. Google Public DNS. No malicious reports.",
